@@ -1,0 +1,25 @@
+body {
+    color: rgb(45, 178, 45);
+}
+
+/* Class rood: maakt tekst rood */
+.rood {
+    color: red;
+}
+
+/* ID blauw: maakt tekst blauw */
+#blauw {
+    color: blue;
+}
+
+.mijn-div {
+    border: 2px solid black;
+    /* zwarte rand */
+    margin: 20px;
+    /* ruimte buiten de div */
+    padding: 15px;
+    /* ruimte binnen de div */
+    background-color: yellow;
+    /* achtergrondkleur */
+    color: red;
+    /*tesktkleur*/

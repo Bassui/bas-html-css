@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaartjes Styling Opdracht - Box Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            margin: 0;
+        }
+
+        .instructies {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .tips {
+            background-color: #e8f5e9;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #4caf50;
+            border-radius: 5px;
+        }
+
+        .waarschuwing {
+            background-color: #fff3cd;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #ffc107;
+            border-radius: 5px;
+        }
+
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #d63384;
+        }
+
+        /* HIER BEGIN JE MET STYLEN */
+
+        /* Stap 1: Style de container */
+        .kaarten-container {
+
+            max-width: 100px;
+        
+        
+        
+        }
+
+
+        /* Stap 2: Style ALLE kaartjes tegelijk */
+
+
+        /* Stap 3: Style de individuele kaartjes */
+    </style>
+</head>
+
+<body>
+    <div class="instructies">
+        <h1>🎴 Kaartjes Styling Opdracht</h1>
+        <p><strong>Tijdsduur:</strong> 20 minuten | <strong>Onderwerp:</strong> Box Model & Selectors</p>
+
+        <h2>Opdracht:</h2>
+        <p>Maak van de drie div-jes hieronder mooie kaartjes door ze te stylen met CSS. Werk in drie stappen!</p>
+
+        <h3>📦 Stap 1: Style de container</h3>
+        <p>Gebruik de juiste selector:</p>
+        <ul>
+            <li>Max-width: 700px</li>
+            <li>Margin: 0 auto (centreert de container)</li>
+            <li>Padding: 20px</li>
+        </ul>
+
+        <h3>⭐ Stap 2: Gezamenlijke styling voor ALLE kaartjes</h3>
+        <p>Gebruik de juiste selector om alle drie de kaartjes tegelijk te stylen:</p>
+        <ul>
+            <li>Achtergrondkleur: wit (#ffffff)</li>
+            <li>Padding: 25px aan alle kanten</li>
+            <li>Margin onderaan: 20px (zodat er ruimte tussen de kaartjes zit)</li>
+            <li>Border-radius: 12px (mooie ronde hoeken)</li>
+            <li>Box-shadow: 0 5px 15px rgba(0,0,0,0.2) (geeft diepte)</li>
+            <li>Border: 1px solid #e0e0e0 (subtiele rand)</li>
+        </ul>
+
+        <h3>🎨 Stap 3: Individuele kaartjes styling</h3>
+
+        <p><strong>Kaartje 1 (id="profiel-kaart"):</strong></p>
+        <ul>
+            <li>Border-left: 5px solid #2196F3 (blauwe accent aan de linkerkant)</li>
+            <li>Background: linear-gradient(to right, #e3f2fd 0%, #ffffff 20%)</li>
+        </ul>
+
+        <p><strong>Kaartje 2 (id="waarschuwing-kaart"):</strong></p>
+        <ul>
+            <li>Border-left: 5px solid #ff9800 (oranje accent)</li>
+            <li>Background: linear-gradient(to right, #fff3e0 0%, #ffffff 20%)</li>
+            <li>Box-shadow: 0 8px 20px rgba(255, 152, 0, 0.3) (oranje gloed)</li>
+        </ul>
+
+        <p><strong>Kaartje 3 (class="succes-kaart"):</strong></p>
+        <ul>
+            <li>Border-left: 5px solid #4caf50 (groene accent)</li>
+            <li>Background: linear-gradient(to right, #e8f5e9 0%, #ffffff 20%)</li>
+            <li>Transform: scale(1.02) (maak 2% groter voor extra aandacht)</li>
+        </ul>
+
+        <div class="tips">
+            <h3>💡 Tips & Uitleg:</h3>
+            <ul>
+                <li><strong>Child selector:</strong> <code>.parent > div</code> selecteert alle directe div-kinderen van
+                    .parent</li>
+                <li><strong>Descendant selector:</strong> <code>.parent div</code> selecteert alle div's binnen .parent
+                    (ook geneste)</li>
+                <li><strong>ID selector:</strong> <code>#mijn-id</code> voor één specifiek element</li>
+                <li><strong>Class selector:</strong> <code>.mijn-class</code> voor herbruikbare styling</li>
+                <li><strong>Box-shadow syntax:</strong> x-offset y-offset blur kleur</li>
+                <li><strong>Gradient:</strong> <code>linear-gradient(to right, kleur1, kleur2)</code></li>
+                <li><strong>Border op één kant:</strong> <code>border-left:</code> alleen links een border</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- DE KAARTJES DIE JE MOET STYLEN -->
+    <div class="kaarten-container">
+        <div id="profiel-kaart">
+            <h2>👤 Profiel Informatie</h2>
+            <p><strong>Naam:</strong> Jan de Vries</p>
+            <p><strong>Functie:</strong> Frontend Developer</p>
+            <p><strong>Locatie:</strong> Amsterdam, Nederland</p>
+            <p>Een kaartje met een professionele uitstraling door de blauwe accent kleur aan de zijkant.</p>
+        </div>
+
+        <div id="waarschuwing-kaart">
+            <h2>⚠️ Belangrijke Melding</h2>
+            <p><strong>Let op:</strong> Je hebt nog 3 opdrachten in te leveren voor vrijdag!</p>
+            <p>Deze kaart trekt de aandacht met een oranje accent en een subtiele gloed effect.</p>
+        </div>
+
+        <div class="succes-kaart">
+            <h2>✅ Gelukt!</h2>
+            <p><strong>Goed gedaan!</strong> Je hebt de basis van het box model onder de knie.</p>
+            <p>Deze kaart is iets groter (scale) om succes te vieren en heeft een groene accent kleur.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
