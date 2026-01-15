@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>                  
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutme</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+
+    <header class="topbar">
+        <h1>Bas de Gerth</h1>
+        <nav>
+  <a href="home.html">Home</a>
+  <a href="hobby.html">Hobby</a>
+    <a href="aboutme.html"> about me</a>
+    </nav>
+    </header>
+
+    <main class="content">
+   <h1>mijn favorite lego sets die ik heb  </h1>        
+        
+        
+        
+        
+ 
+
+        </main>
+       <div class="container">
+  <div>
+    <img src="map foto/71847_Prod_en-gb.webp" alt="drakenset" width="300">
+  </div>
+  <div>
+    <img src="map foto/71832_Prod_en-gb.jpg" alt="lego set" width="300">
+  </div>
+  <div>
+    <img src="map foto/LEGO_71822_Bron_Draak_van_Beweging_Vlieg_ten_strijde_met_Jay_en_Nya_2TTOYS_NINJAGO_2HY24_EcommerceMobile_NOTEXT_3000x3000_2.webp" alt="lego set" width="300">
+  </div>
+</div>
+
+<div class="klikker">
+  <p id="count">0</p>
+  <button onclick="klik()">Klik</button>
+  <button onclick="reset()">Reset</button>
+</div>
+
+<script>
+let c = 0;
+
+function klik() {
+  c++;
+  document.getElementById("count").innerText = c;
+}
+
+function reset() {
+  c = 0;
+  document.getElementById("count").innerText = c;
+}
+</script>
+
+
+</body>
+</html>
+

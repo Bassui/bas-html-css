@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <body>
-<input type="text" id="getal"/>
-<button id ="buton">guess</button>
-<div id="text"></div>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body> 
+<input type="text" id="number">
+<button id="button">Gooien</button>
+</body>
+<script>
 
+    let numbers = [1,2,3,4,5,6];
+        
+ for (let i = 0; i <5; i++) {
+    let random = Math.floor(Math.random(5)*6+1);
+    numbers.push(random);
+    numbers.push(random);
+    numbers.push(random);
+    numbers.push(random);
+    numbers.push(random);
+console.log(numbers[i]);
 
-    </body>
-    <script>
-        let button = document.querySelector("#buton");
-        button.addEventListener("click",gok);
-let textElement = document.querySelector("#text");
-function guess(){
-NumberGuess= document.querySelector("#getal").value;
-if {
-
-
-
-
-}
-textElement.textContent+"hoger of lager?";
-}
+ }
+    
 </script>
 </html>
